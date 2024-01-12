@@ -1,0 +1,351 @@
+#door .door__container {
+    display: flex !important;
+    justify-content: space-evenly !important
+}
+
+#door .box {
+    perspective: 500px !important;
+    position: relative !important
+}
+
+#door .box,
+#door .door {
+    width: 190px !important;
+    height: 400px !important;
+    box-shadow: inset -1px -1px 0 1px #191919, inset 1px 1px 0 1px #191919 !important
+}
+
+#door .door,
+#door .hi {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important
+}
+
+#door .door {
+    background-image: url(../img/door1.png) !important;
+    background-repeat: no-repeat !important;
+    transform: rotateY(0deg) !important;
+    display: inline-block !important;
+    transition: all .75s ease !important;
+    transform-origin: 0% 0% !important;
+    cursor: pointer !important
+}
+
+#door #door__2 {
+    background-image: url(../img/door2.png) !important
+}
+
+#door #door__3 {
+    background-image: url(../img/door3.png) !important
+}
+
+#door .door:hover {
+    transform: rotateY(-30deg) !important
+}
+
+#door .door.open {
+    transform: rotateY(-85deg) !important
+}
+
+#door .door__sales {
+    position: relative !important;
+    top: 140px !important;
+    font-size: 55px !important;
+    font-weight: 700 !important;
+    color: red !important;
+    border-radius: 30px !important;
+    padding: 30px 5px !important;
+    box-shadow: 0 1px 2px 2px #7f7878 !important
+}
+
+#door .door__title {
+    color: #fff !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    text-align: center !important;
+    font-size: 22px !important;
+    margin-bottom: 25px !important;
+    background-color: #3a4752 !important;
+    padding: 10px 0 !important;
+    border-radius: .5em !important
+}
+
+@media(max-width: 840px) {
+    #door .door__sales {
+        font-size: 20px !important;
+        font-weight: 700 !important;
+        top: 50px !important;
+        color: red !important;
+        border-radius: 30px !important;
+        padding: 30px 5px !important
+    }
+
+    #door .box,
+    #door .door {
+        width: 95px !important;
+        height: 200px !important
+    }
+
+    #door .door {
+        background-size: contain !important
+    }
+
+    #door #door__2 {
+        background-size: contain !important
+    }
+
+    #door #door__3 {
+        background-size: contain !important
+    }
+}
+
+@media(max-width: 360px) {
+    #door .box+.box {
+        margin-left: 15px !important
+    }
+
+    #door .door__sales {
+        font-size: 22px !important;
+        font-weight: 700 !important;
+        top: 50px !important;
+        color: red !important;
+        border-radius: 30px !important;
+        padding: 30px 5px !important
+    }
+}
+
+#door #form-block>center>div.order_block>img {
+    width: 80% !important
+}
+
+#door * {
+    font-family: sans-serif !important
+}
+
+#door p,
+#door ul li,
+#door ol li {
+    font-size: 22px !important;
+    line-height: 26px !important
+}
+
+@media(max-width: 768px) {
+
+    #door .card__item__sale .card__item__sale-100,
+    #door .card__item__sale .card__item__sale-50,
+    #door .card__item__sale .card__item__sale-30 {
+        font-size: 22px !important
+    }
+}
+
+@media(max-width: 426px) {
+
+    #door .card__item__sale .card__item__sale-100,
+    #door .card__item__sale .card__item__sale-50,
+    #door .card__item__sale .card__item__sale-30 {
+        font-size: 15px !important
+    }
+}
+
+@media(max-width: 371px) {
+
+    #door .card__item__sale .card__item__sale-100,
+    #door .card__item__sale .card__item__sale-50,
+    #door .card__item__sale .card__item__sale-30 {
+        font-size: 11px !important
+    }
+}
+
+#door #form-block>center>div.order_block>h3 {
+    margin: 15px auto !important
+}
+
+/* Результат */
+
+
+
+
+
+
+
+
+
+.spin-result-wrapper {
+    display: none;
+    padding: 0 10px !important;
+    -webkit-box-sizing: border-box !important;
+    box-sizing: border-box !important;
+    width: 100% !important;
+    top: 0 !important;
+    z-index: 999 !important;
+    left: 0 !important;
+    height: 100% !important;
+    position: fixed !important;
+    background-color: rgba(0, 0, 0, .6) !important;
+    text-align: center !important
+}
+
+.pop-up-window {
+    position: relative !important;
+    max-width: 400px !important;
+    right: 0 !important;
+    left: 0 !important;
+    top: 40% !important;
+    margin: 0 auto !important;
+    background: #fff none repeat scroll 0% 0% !important;
+    text-align: center !important;
+    padding: 10px !important;
+    padding-top: 70px !important;
+    padding-bottom: 20px !important;
+    border-radius: 10px !important;
+    animation: .7s ease 0s normal none 1 running pop-up-appear !important
+}
+
+.close-popup {
+    position: absolute !important;
+    width: 30px !important;
+    height: 30px !important;
+    background-image: url(../img/cross.svg) !important;
+    background-size: 100% !important;
+    top: -40px !important;
+    border-radius: 50% !important;
+    -webkit-box-shadow: 0 0 10px #fff !important;
+    box-shadow: 0 0 10px #fff !important;
+    right: -40px !important;
+    cursor: pointer !important
+}
+
+.pop-up-heading {
+    font-size: 40px !important;
+    margin-bottom: 20px !important
+}
+
+.pop-up-text {
+    margin-bottom: 25px !important;
+    font-size: 24px !important;
+    line-height: 30px !important;
+    text-align: center !important
+}
+
+.pop-up-button {
+    text-transform: uppercase !important;
+    text-decoration: none !important;
+    padding: 10px 20% !important;
+    font-size: 20px !important;
+    border-radius: 5px !important;
+    background-color: #71c341 !important;
+    color: #fff !important;
+    border: medium !important;
+    cursor: pointer !important;
+    outline: medium !important
+}
+
+
+.pop-up-layer {
+    position: fixed!important;
+    top: 0!important;
+    width: 100%!important;
+    height: 100%!important;
+    background-color: rgba(0,0,0,.7)!important;
+    z-index: 99!important
+}
+
+.pop-up-layer-show {
+    display: block
+}
+
+.pop-up-window {
+    position: relative;
+    max-width: 400px;
+    right: 0;
+    left: 0;
+    top: 40%;
+    margin: 0 auto;
+    background: #fff none repeat scroll 0% 0%;
+    text-align: center;
+    padding: 10px;
+    padding-top: 70px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    animation: .7s ease 0s normal none 1 running pop-up-appear
+}
+
+.pop-up-window::before {
+    content: "" !important;
+    position: absolute !important;
+    width: 110px !important;
+    height: 110px !important;
+    top: -55px !important;
+    left: 0 !important;
+    right: 0 !important;
+    margin: 0 auto !important;
+    background-color: #71c341 !important;
+    border-radius: 50% !important;
+    animation: .5s ease .6s normal backwards 1 running pop-up-appear-before !important
+}
+
+.pop-up-window::after {
+    content: "" !important;
+    position: absolute !important;
+    width: 50px !important;
+    height: 20px !important;
+    top: -20px !important;
+    left: 0 !important;
+    right: 0 !important;
+    margin: 0 auto !important;
+    border-width: medium medium 4px 4px !important;
+    border-style: none none solid solid !important;
+    border-color: currentcolor currentcolor #fff #fff !important;
+    -moz-border-top-colors: none !important;
+    -moz-border-right-colors: none !important;
+    -moz-border-bottom-colors: none !important;
+    -moz-border-left-colors: none !important;
+    border-image: none !important;
+    transform: rotate(-45deg) !important;
+    transition: opacity 1s ease 0s !important;
+    animation: .5s ease .6s normal backwards 1 running pop-up-appear-after !important
+}
+
+@keyframes pop-up-appear {
+    0% {
+        transform: translateY(-2000px)
+    }
+
+    30% {
+        transform: translateY(100px)
+    }
+
+    100% {
+        transform: translateY(0px)
+    }
+}
+
+@keyframes pop-up-appear-before {
+    0% {
+        transform: scale(0)
+    }
+
+    100% {
+        transform: scale(1)
+    }
+}
+
+@keyframes pop-up-appear-after {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+.pop-up-button:hover {
+    color: #fff !important;
+    text-decoration: none !important
+}
